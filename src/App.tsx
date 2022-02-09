@@ -10,7 +10,7 @@ import Stats from 'three/examples/jsm/libs/stats.module'
 const loadFbxObject = (url: string, callback: (obj: any) => void, opponent: boolean, texture_url: string | undefined = undefined, color: THREE.ColorRepresentation | undefined = undefined) => {
   let carmat: THREE.MeshBasicMaterial | undefined = undefined;
   if (texture_url) {
-    const cartex = new THREE.TextureLoader().load(process.env.PUBLIC_URL + texture_url);
+    const cartex = new THREE.TextureLoader().load(process.env.PUBLIC_URL + '/' + texture_url);
     carmat = new THREE.MeshBasicMaterial({ map: cartex, opacity: opponent ? 0.1 : 1 });
     if (color) {
       carmat.color.set(color);
@@ -19,7 +19,7 @@ const loadFbxObject = (url: string, callback: (obj: any) => void, opponent: bool
 
   const fbxLoader = new FBXLoader();
   fbxLoader.load(
-    process.env.PUBLIC_URL + url,
+    process.env.PUBLIC_URL + '/' + url,
     (object) => {
       if (texture_url)
       object.traverse(function (child) {
@@ -45,7 +45,7 @@ const loadGltfObject = (url: string, callback: (obj: any) => void) => {
  
   const loader = new GLTFLoader();
   loader.load(
-    process.env.PUBLIC_URL + url,
+    process.env.PUBLIC_URL + '/' + url,
     (object) => {
       callback(object);
     },
