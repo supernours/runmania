@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/runmania/static/css/main.073c9b0a.css",
-    "main.js": "/runmania/static/js/main.f1b65bf7.js",
+    "main.js": "/runmania/static/js/main.117ddce2.js",
     "static/js/787.ab5e6163.chunk.js": "/runmania/static/js/787.ab5e6163.chunk.js",
     "index.html": "/runmania/index.html",
     "main.073c9b0a.css.map": "/runmania/static/css/main.073c9b0a.css.map",
-    "main.f1b65bf7.js.map": "/runmania/static/js/main.f1b65bf7.js.map",
+    "main.117ddce2.js.map": "/runmania/static/js/main.117ddce2.js.map",
     "787.ab5e6163.chunk.js.map": "/runmania/static/js/787.ab5e6163.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.f1b65bf7.js"
+    "static/js/main.117ddce2.js"
   ]
 }
